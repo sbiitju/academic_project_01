@@ -24,11 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void Dhaka(View view) {
         List<DistrictModel> dhakaList=new ArrayList<>();
-        int[] districtOfDhakaPic={R.drawable.first_image,R.drawable.second_image};
+        int[] districtOfDhakaPic={R.drawable.first_image,R.drawable.second_image,R.drawable.second_image};
         DistrictModel dhaka=new DistrictModel("Dhaka","About Dhaka");
         DistrictModel gazipur=new DistrictModel("Gazipur","About Gazipur");
+        DistrictModel faridpur=new DistrictModel("Faridpur","About Faridpur");
         dhakaList.add(dhaka);
         dhakaList.add(gazipur);
+        dhakaList.add(faridpur);
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
         View view1=getLayoutInflater().inflate(R.layout.districtlist,null);
         RecyclerView recyclerView=view1.findViewById(R.id.recyclerview);
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Khulna(View view) {
+
     }
 
     public void Maymansing(View view) {
